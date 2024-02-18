@@ -1,0 +1,294 @@
+/* GENERALES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259C3;
+    --gris-oscuro: #666;
+    --gris-claro: #EBEBEB;
+    --verde: #39B54A;
+    --cuerpos-de-texto: 12px;
+    --titulares: 24px;
+    --precios: 18px;
+    --descuentos: 16px;
+    --descripciones: 16px;
+}
+
+/* HEADER */
+
+.header {
+    background-color: var(--amarillo);
+}
+
+.header__logo {
+    width: 100%;
+    /* margin: 2% 2%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 2% 0 2%;
+}
+
+.logo {
+    width: 45%;
+}
+
+.busqueda {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.busqueda__input {
+    width: 100%;
+}
+
+.lupa {
+    align-self: center;
+    margin-left: 1%;
+}
+
+.navegacion {
+    width: 100%;
+}
+
+.header__eslogan {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 2%;
+}
+
+.mano {
+    margin-right: 1%;
+}
+
+.lista1, .lista2 {
+    display: none;
+    list-style-type: none;
+}
+
+.burger-menu {
+    text-align: center;
+    padding: 1.5%;
+    display: inline-block;
+    background-color: var(--celeste);
+}
+
+.burger__link {
+    color: white;
+}
+
+.header__banner {
+    width: 100%;
+    margin: 5% 0 0 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.header__banner--foto {
+    width: 100%;
+}
+
+/* MAIN */
+
+.main {
+    margin: auto;
+    background-color: var(--gris-claro);
+    background-color: #EBEBEB;
+    padding: 0.1% 0;
+}
+
+.producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 4%;
+    line-height: 20%;
+}
+
+.producto__imagen {
+    width: 100%;
+}
+
+.producto__precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.producto__descuento {
+    font-size: 14px;
+    color: var(--verde);
+    width: 70%;
+    position: relative;
+}
+
+.producto__nombre {
+    padding-bottom: 10%;
+    font-family: "Roboto";
+    color: var(--gris-oscuro);
+}
+
+.camion {
+    padding: 5% 0 4%;
+    color: var(--verde);
+}
+
+.producto--datos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.producto__precio, .producto__descuento, .producto__nombre, .camion {
+    margin-left: 5%;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link__section {
+    display: flex;
+    gap: 2%;
+}
+
+.burger-menu {
+    color: white;
+    margin-left: 50%;
+}
+
+.icono {
+    font-size: 1.4rem;
+    margin-bottom: 1%;
+}
+
+/* FOOTER */
+
+.footer__section {
+    text-align: center;
+    margin-bottom: 2%;
+    width: 95%;
+    margin: auto;
+}
+
+.footer__icon {
+    margin-top: 15%;
+    line-height: 2%;
+}
+
+.titular {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto";
+    color: var(--gris-oscuro);
+    margin: 5% auto;
+}
+
+.titular__footer {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto";
+    color: var(--gris-oscuro);
+}
+
+.descripcion {
+    font-size: 12px;
+    margin-top: -6%;
+}
+
+.copyright {
+    margin-top: 10%;
+    font-size: 14px;
+}
+
+/* MEDIA QUERIES */
+/* 369px */
+@media (min-width: 369px){
+    .lista1, .lista2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista1 {
+        align-items: flex-start;
+        width: 40%;
+        padding: 0;
+    }
+
+    .lista1 li {
+        padding: 1% 0;
+    }
+
+    .lista2 {
+        width: 50%;
+    }
+
+    .lista2 .icono {
+        margin-left: 1%;
+    }
+
+    .lista2 .link__section {
+        padding: 2% 0;
+    }
+
+    .navegacion {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 2%;
+    }
+
+    .link__section {
+        justify-content: flex-end;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .descripcion {
+        font-size: 14px;
+        margin-top: -3%;
+    }
+
+    .eslogan {
+        font-size: 22px;
+    }
+
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .producto {
+        width: 45%;
+    }
+}
+
+/* 769px */
+@media (min-width: 769px){
+    .descripcion {
+        font-size: 16px;
+        margin-top: -1%;
+    }
+
+    .eslogan {
+        font-size: 24px;
+    }
+}
+
+/* 1200px */
+@media (min-width: 1200px){
+
+}
