@@ -274,6 +274,14 @@ body {
     .producto {
         width: 45%;
     }
+
+    .footer {
+        padding-bottom: 2%;
+    }
+
+    .copyright {
+        margin-top: 4%;
+    }
 }
 
 /* 769px */
@@ -294,6 +302,16 @@ body {
 
     .producto {
         width: 20%;
+    }
+
+    .footer {
+        display: flex;
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer__section {
+        margin: 0 2%;
     }
 }
 
