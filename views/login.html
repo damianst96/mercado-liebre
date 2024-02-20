@@ -66,20 +66,21 @@
     </header>
 	
 	<!-- MAIN -->
-	<form action="/" class="form">
-        <div class="form__username">
-            <label for="">Nombre de usuario</label>
-            <input type="text" name="username">
-        </div>
-        <div class="form__password">
-            <label for="">Contraseña</label>
-            <input type="password" name="password">
-        </div>
-        <div>
-            <button type="submit">Iniciar Sesión</button>
-        </div>
-        
-    </form>
+    <main>
+        <form action="/">
+            <div class="form__username">
+				<label>Nombre de usuario</label>
+				<input type="text" required></input>
+			</div>
+            <div class="form__password">
+                <label>Contraseña</label>
+                <input type="password" required></input>
+            </div>
+            <div class="form__submit">
+				<button type="submit" value="inicio-sesion">Iniciar Sesión</button>
+			</div>
+        </form>
+    </main>
 	
 	<!-- FOOTER -->
 	<footer>
