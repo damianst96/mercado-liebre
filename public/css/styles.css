@@ -123,14 +123,13 @@ body {
 
 .producto__precio {
     font-size: 18px;
-    width: 30%;
+    
 }
 
 .producto__descuento {
     font-size: 14px;
     color: var(--verde);
-    width: 70%;
-    position: relative;
+    
 }
 
 .producto__nombre {
@@ -170,7 +169,7 @@ body {
 }
 
 .icono {
-    font-size: 1.4rem;
+    
     margin-bottom: 1%;
 }
 
@@ -215,7 +214,7 @@ body {
 
 /* MEDIA QUERIES */
 /* 369px */
-@media (min-width: 369px){
+@media (min-width: 368px){
     .lista1, .lista2 {
         display: flex;
         flex-direction: column;
@@ -232,21 +231,17 @@ body {
     }
 
     .lista2 {
-        width: 50%;
+        width: 45%;
     }
 
     .lista2 .icono {
-        margin-left: 1%;
-    }
-
-    .lista2 .link__section {
-        padding: 1% 0;
+        margin-left: 2%;
     }
 
     .navegacion {
         display: flex;
-        justify-content: space-around;
-        padding: 0 2%;
+        justify-content: center;
+        
     }
 
     .link__section {
@@ -285,7 +280,7 @@ body {
 }
 
 /* 769px */
-@media (min-width: 769px){
+@media (min-width: 768px){
 	.header__logo {
 		flex-wrap: nowrap;
 		justify-content: space-around;
@@ -312,7 +307,7 @@ body {
 		display: flex;
 		margin: 2% 0 0 0;
 		padding: 0;
-		align-items: center;
+		align-items: space-between;
 	}
 	
 	.lista1, .lista2 {
@@ -324,9 +319,15 @@ body {
 	.lista2 {
 		align-items: center;
 		justify-content: space-between;
+		
 	}
 	
 	.link__section {
+		margin: 0 -2%;
+		width: 50%;
+	}
+	
+	.link__section1 {
 		margin: 0 2%;
 	}
 
@@ -336,7 +337,7 @@ body {
     }
 
     .producto {
-        width: 20%;
+        width: 22.5%;
     }
 
     .footer {
@@ -352,5 +353,24 @@ body {
 
 /* 1200px */
 @media (min-width: 1200px){
-
+	.navegacion {
+		font-size: 20px;
+		padding: 0;
+	}
+	
+	.producto {
+		font-size: 20px;
+	}
+	
+	.producto__precio {
+		font-size: 25px;
+	}
+	
+	.producto__descuento {
+		font-size: 18px;
+	}
+	
+	.producto--datos {
+		align-items: center;
+	}
 }
