@@ -240,7 +240,7 @@ body {
     }
 
     .lista2 .link__section {
-        padding: 2% 0;
+        padding: 1% 0;
     }
 
     .navegacion {
@@ -286,6 +286,19 @@ body {
 
 /* 769px */
 @media (min-width: 769px){
+	.header__logo {
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+	
+	.logo, .header__busqueda, .header__eslogan {
+		width: 33%;
+	}
+	
+	.logo {
+		padding: 0 2%;
+	}
+	
     .descripcion {
         font-size: 16px;
         margin-top: -1%;
@@ -294,6 +307,28 @@ body {
     .eslogan {
         font-size: 24px;
     }
+	
+	.navegacion {
+		display: flex;
+		margin: 2% 0 0 0;
+		padding: 0;
+		align-items: center;
+	}
+	
+	.lista1, .lista2 {
+		margin: 0;
+		padding: 0;
+		flex-direction: row;
+	}
+	
+	.lista2 {
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	.link__section {
+		margin: 0 2%;
+	}
 
     .productos {
         display: flex;
