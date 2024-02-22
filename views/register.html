@@ -66,49 +66,65 @@
     </header>
 	
 	<!-- MAIN -->
-	<main>
-		<section>
+	<main class="main">
+		<form action="/registro" method="post" class="form">
+            <section>
                 <h3 class="titular">Registrate en Mercado Liebre</h3>
-        </section>
-		<form action="/" class="form">
-			<div class="form__name">
-				<label>Nombre y apellido</label>
-				<input type="text" required></input>
+            </section>
+
+			<div class="form__section">
+				<label for="registro">Nombre y apellido: <input type="text" required></label>
 			</div>
-			<div class="form__username">
-				<label>Nombre de usuario</label>
-				<input type="text" required></input>
+			<div class="form__section">
+				<label for="registro">Nombre de usuario: <input type="text" required></label>
 			</div>
-			<div class="form__email">
-				<label>E-Mail</label>
-				<input type="email" required></input>
+			<div class="form__section">
+				<label for="registro">E-Mail: <input type="email" required></label>
 			</div>
-			<div class="form__birthdate">
-				<label>Fecha de nacimiento</label>
-				<input type="date" required></input>
+			<div class="form__section">
+				<label for="registro">Fecha de nacimiento: <input type="date" required></label>
 			</div>
-			<div class="form__address">
-				<label>Domicilio</label>
-				<input type="text" required></input>
+			<div class="form__section">
+				<label for="registro">Domicilio: <input type="text" required></input></label>
 			</div>
-			<div class="form__profile">
-				<label>Perfil</label><br>
-				<input type="radio" name="profile" required>Comprador</input>
-				<input type="radio" name="profile" required>Vendedor</input>
+			<div class="form__section">
+				<label for="registro" class="form__checkbox--subtitulo">Perfil</label><br>
+                <label for="registro">Comprador<input type="radio" name="profile" value="comprador" required></label>
+                <label for="registro">Vendedor<input type="radio" name="profile" value="vendedor" required></label>
 			</div>
-			<!-- CATEGORÍAS DE INTERÉS - CHECKBOX (ELECTRO, MODA, HOGAR, JUGUETERÍA Y VIDA SANA) -->
-			<!-- FOTO DE PERFIL -->
-			<div class="form__password">
-				<label>Contraseña</label>
-				<input type="password" required></input>
+            <div class="form__section form__checkbox">
+                <label for="registro" class="form__checkbox--subtitulo">Intereses</label><br>
+                <div class="checkbox-item">
+                    <label>Electro<input type="checkbox" name="intereses" value="Electro"></label>
+                </div>
+                <div class="checkbox-item">
+                    <label>Moda<input type="checkbox" name="intereses" value="Moda"></label>
+                </div>
+                <div class="checkbox-item">
+                    <label>Hogar<input type="checkbox" name="intereses" value="Hogar"></label>
+                </div>
+                <div class="checkbox-item">
+                    <label>Juguetería<input type="checkbox" name="intereses" value="Juguetería"></label>
+                </div>
+                <div class="checkbox-item">
+                    <label>Vida Sana<input type="checkbox" name="intereses" value="Vida Sana"></label>
+                </div>
+            </div>
+			<div class="form__section">
+                <label>Foto de perfil<input type="file" accept=".jpg, .png"></label>
+            </div>
+			<div class="form__section">
+				<label>Contraseña: <input type="password" required></label>
+				
 			</div>
-			<div class="form__password">
-				<label>Confirmar Contraseña</label>
-				<input type="password" required></input>
+			<div class="form__section">
+				<label>Confirmar Contraseña: <input type="password" required></label>
 			</div>
-			<div class="form__submit">
+			<div class="form__section">
 				<button type="submit" value="inicio-sesion">Registrarse</button>
+                <button type="reset" value="inicio-sesion">Borrar</button>
 			</div>
+            
 		</form>
 		
 	</main>

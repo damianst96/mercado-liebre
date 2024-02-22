@@ -3,6 +3,7 @@
 	margin: auto;
 }
 
-.form__username, .form__password, .form__submit {
+.form__section {
 	margin: 4% 0;
+	width: 100%;
 }

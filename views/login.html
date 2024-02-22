@@ -66,17 +66,18 @@
     </header>
 	
 	<!-- MAIN -->
-    <main>
-        <form action="/">
-            <div class="form__username">
-				<label>Nombre de usuario</label>
-				<input type="text" required></input>
+    <main class="main">
+        <form action="/" class="form" method="post">
+            <section>
+                <h3 class="titular">Iniciá sesión en Mercado Liebre</h3>
+            </section>
+            <div class="form__section">
+				<label>Nombre de usuario:<input type="text" required></input></label>
 			</div>
-            <div class="form__password">
-                <label>Contraseña</label>
-                <input type="password" required></input>
+            <div class="form__section">
+                <label>Contraseña:<input type="password" required></input></label>
             </div>
-            <div class="form__submit">
+            <div class="form__section">
 				<button type="submit" value="inicio-sesion">Iniciar Sesión</button>
 			</div>
         </form>
