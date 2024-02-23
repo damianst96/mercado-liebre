@@ -136,6 +136,7 @@ body {
     padding-bottom: 10%;
     font-family: "Roboto";
     color: var(--gris-oscuro);
+	width: 100%;
 }
 
 .camion {
@@ -214,7 +215,7 @@ body {
 
 /* MEDIA QUERIES */
 /* 369px */
-@media (min-width: 368px){
+@media (min-width: 449px){
     .lista1, .lista2 {
         display: flex;
         flex-direction: column;
@@ -280,7 +281,7 @@ body {
 }
 
 /* 769px */
-@media (min-width: 768px){
+@media (min-width: 769px){
 	.header__logo {
 		flex-wrap: nowrap;
 		justify-content: space-around;
@@ -353,13 +354,35 @@ body {
 
 /* 1200px */
 @media (min-width: 1200px){
+	.header__logo {
+		justify-content: space-around;
+	}
+	
+	.eslogan {
+		width: 20%;
+	}
+	
+	.logo {
+		width: 20%;
+		padding: 0;
+	}
+	
 	.navegacion {
 		font-size: 20px;
 		padding: 0;
 	}
 	
+	.busqueda {
+		width: 15%;
+	}
+	
+	.titular {
+		margin: 2% 0;
+	}
+	
 	.producto {
 		font-size: 20px;
+		margin-bottom: 2%;
 	}
 	
 	.producto__precio {
