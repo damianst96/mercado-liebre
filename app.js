@@ -8,11 +8,16 @@ app.use(express.json());
 let publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
-app.listen(3001, function(){
+// app.listen(3001, function(){
+//     console.log("Server starting in 3001 port");
+//     console.log("Precaching resources...");
+// });
+
+const port = process.env.PORT || 3001;
+app.listen(port, function(){
     console.log("Server starting in 3001 port");
     console.log("Precaching resources...");
 });
-
 
 // RUTAS DE ARCHIVOS
 app.get("/", function(req, res){
