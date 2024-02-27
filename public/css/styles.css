@@ -109,15 +109,19 @@ body {
 }
 
 .producto {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border: 1px solid gray;
     width: 90%;
     margin: auto;
     margin-bottom: 4%;
     line-height: 20%;
+    position: relative;
+    transition: display 300ms;
+    transition: box-shadow 300ms;
 }
 
 .producto__imagen {
     width: 100%;
+    margin-bottom: 2%;
 }
 
 .producto__precio {
@@ -135,12 +139,15 @@ body {
     font-family: "Roboto";
     color: var(--gris-oscuro);
     /* display: none; */
+    /* transition: display 300ms; */
 }
 
-/* .producto:hover {
-    .producto__nombre {
-        display: flex;
-    }
+.producto:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+/* .producto:hover .producto__nombre {
+    display: flex;
 } */
 
 .camion {
@@ -148,10 +155,30 @@ body {
     color: var(--verde);
 }
 
+.camion {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    transition: transform 300ms;
+}
+
+.producto:hover .camion {
+    transform: rotateZ(-90deg);
+}
+
 .producto--datos {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
 .producto__precio, .producto__descuento, .producto__nombre, .camion {
@@ -218,8 +245,8 @@ body {
 }
 
 /* MEDIA QUERIES */
-/* 369px */
-@media (min-width: 368px){
+/* 449px */
+@media (min-width: 449px){
     .lista1, .lista2 {
         display: flex;
         flex-direction: column;
@@ -285,7 +312,7 @@ body {
 }
 
 /* 769px */
-@media (min-width: 768px){
+@media (min-width: 769px){
 	.header__logo {
 		flex-wrap: nowrap;
 		justify-content: space-around;
@@ -345,6 +372,10 @@ body {
         width: 22.5%;
     }
 
+    .producto__nombre {
+        font-size: 15px;
+    }
+
     .footer {
         display: flex;
         width: 90%;
@@ -358,13 +389,35 @@ body {
 
 /* 1200px */
 @media (min-width: 1200px){
-	.navegacion {
-		font-size: 20px;
+	.header__logo {
+		justify-content: space-around;
+	}
+	
+	.eslogan {
+		width: 20%;
+	}
+	
+	.logo {
+		width: 20%;
 		padding: 0;
+	}
+	
+	.navegacion {
+		font-size: 16px;
+		padding: 0;
+	}
+	
+	.busqueda {
+		width: 20%;
+	}
+	
+	.titular {
+		margin: 2% 0;
 	}
 	
 	.producto {
 		font-size: 20px;
+		margin-bottom: 2%;
 	}
 	
 	.producto__precio {
@@ -374,6 +427,10 @@ body {
 	.producto__descuento {
 		font-size: 18px;
 	}
+
+    .producto__nombre {
+        font-size: 18px;
+    }
 	
 	.producto--datos {
 		align-items: center;
