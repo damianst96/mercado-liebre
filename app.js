@@ -8,8 +8,8 @@ app.use(express.json());
 let publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
-app.listen(3000, function(){
-    console.log("Server starting in 3000 port");
+app.listen(3001, function(){
+    console.log("Server starting in 3001 port");
     console.log("Precaching resources...");
 });
 
