@@ -10,13 +10,8 @@
 	<link rel="stylesheet" href="/css/register.css">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <!-- FUENTE ROBOTO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!-- HEADER -->
     <header class="header">
         <div class="header__logo">
             <img class="logo" src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLibre pero MercadoLiebre">
@@ -24,24 +19,48 @@
                 <input class="busqueda__input" type="text" name="" placeholder="Ingrese su búsqueda">
                 <i class="fa-solid fa-magnifying-glass lupa"></i>
             </section>
+			<div class="header__eslogan">
+				<p class="header__eslogan--texto"><i class="fa-solid fa-hand-holding-dollar mano"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+			</div>
         </div>
 
-        <div class="header__eslogan">
-            <p class="header__eslogan--texto"><i class="fa-solid fa-hand-holding-dollar mano"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-        </div>
-        
         <nav class="navegacion">
             <ul class="lista1">
-                <li><a class="link" href="#">Ofertas</a></li>
-                <li><a class="link" href="#">Tiendas Oficiales</li></a>
-                <li><a class="link" href="#">Vender</li></a>
-                <li><a class="link" href="#">Ayuda</li></a>
+				<section class="link__section1">
+					<li><a class="link" href="#">Ofertas</a></li>
+				</section>
+				<section class="link__section1">
+					<li><a class="link" href="#">Tiendas Oficiales</li></a>
+				</section>
+				<section class="link__section1">
+					<li><a class="link" href="#">Vender</li></a>
+				</section>
+				<section class="link__section1">
+					<li><a class="link" href="#">Ayuda</li></a>
+				</section>
+             
+            </ul>
+
+            <ul class="lista2">
+				<section class="link__section1">
+					<li><a class="link" href="/register">Creá tu cuenta</li>
+                    <i class="fa-solid fa-user icono"></i></a>
+				</section>
+				<section class="link__section1">
+					<li><a class="link" href="/login">Ingresá</li>
+                    <i class="fa-solid fa-arrow-right-to-bracket icono"></i></a>
+				</section>
+				<section class="link__section1">
+					<li><a class="link" href="#">Mis compras</li>
+                    <i class="fa-solid fa-cart-shopping icono"></i></a>
+				</section>
+             
             </ul>
     
-            <ul class="lista2">
+            <!-- <ul class="lista2">
                 <section class="link__section">
-                    <li><a class="link" href="/register">Creá tu cuenta</li></a>
-                    <i class="fa-solid fa-user icono"></i>
+                    <li><a class="link" href="/register">Creá tu cuenta</li>
+                    <i class="fa-solid fa-user icono"></i></a>
                 </section>
                 
                 <section class="link__section">
@@ -54,7 +73,7 @@
                     <i class="fa-solid fa-cart-shopping icono"></i>
                 </section>
                 
-            </ul>
+            </ul> -->
         </nav>
 
         <div class="burger-menu">
