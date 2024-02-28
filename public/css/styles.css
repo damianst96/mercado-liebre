@@ -195,14 +195,17 @@ body {
     gap: 2%;
 }
 
+.link__section1 {
+    display: flex;
+}
+
 .burger-menu {
     color: white;
     margin-left: 50%;
 }
 
 .icono {
-    
-    margin-bottom: 1%;
+    margin-left: 2%;
 }
 
 /* FOOTER */
@@ -263,7 +266,7 @@ body {
     }
 
     .lista2 {
-        width: 45%;
+        width: 40%;
     }
 
     .lista2 .icono {
@@ -272,7 +275,7 @@ body {
 
     .navegacion {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         
     }
 
@@ -350,13 +353,13 @@ body {
 	
 	.lista2 {
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		
 	}
 	
 	.link__section {
-		margin: 0 -2%;
-		width: 50%;
+		margin: 0 auto;
+		width: 30%;
 	}
 	
 	.link__section1 {
